@@ -7,6 +7,75 @@
     <title>Contacto</title>
 </head>
 <body>
+    <header>
+        <div>
+            <a href="./index.html">
+                <img src="./img/img-place-holder.png" alt="Logo" width="20px">
+                <span>Academia</span>
+            </a>
+        </div>
+    </header>
     <h1> Contacto </h1>
+    <section>
+        <div>
+            <h2> Formulario de Ingreso </h2>
+            
+            <form id="formulario" action="" method="GET" enctype="multipart/form-data">
+
+                <fieldset>
+                    <legend>Informacion Basica</legend>
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre">
+
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido">
+
+                    <label for="dni">DNI:</label>
+                    <input type="number" name="dni">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informacion de Contacto</legend>
+
+                    <label for="telefono">Telefono:</label>
+                    <input type="number" name="telefono">
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email">
+
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea name="comentarios" cols="50" rows="20"></textarea>
+
+                    <select name="ciudad" multiple>
+                        <option value="zarate">Zarate</option>
+                        <option value="campana">Campana</option>
+                        <option value="lima">Lima</option>
+                    </select>
+                </fieldset>
+
+                <select name="autos" multiple>
+                    <optgroup label="FORD">
+                        <option value="ka">KA</option>
+                        <option value="fiesta">Fiesta</option>
+                    </optgroup>
+
+                    <optgroup label="CHEVROLET">
+                        <option value="prisma">Prisma</option>
+                        <option value="onix">Onix</option>
+                    </optgroup>
+                </select>
+
+                <input type="reset" value="Reset">
+                <input type="submit" value="Guardar">
+            </form>
+        </div>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26629.18073877026!2d-61.50504011580052!3d-33.458486765507025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c82297962c8f7d%3A0x18e6e9aa14fdf673!2sFirmat%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1658186832192!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <footer>
+        <span> Eduardo Denis </span> <a href="">Instagram</a>
+    </footer>
 </body>
 </html>
