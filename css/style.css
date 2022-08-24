@@ -17,6 +17,7 @@ a {
         padding: 0.5em;
 
         text-align: center;
+        width: calc(100% - 1em);
     }
 
 /* HEADER */
@@ -84,4 +85,92 @@ a {
 
     #subtitle p {
         color: white;
+    }
+
+/* Seccion: Servicios */
+
+    section#servicios {
+        min-height: 120vh;
+
+        display: flex;
+        flex-flow: row nowrap;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    #servicios > div:nth-child(1) {
+        border-right: 1px solid black;
+        flex-basis: calc(60% - 1px);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #servicios > div:nth-child(1) > * {
+        width: 80%;
+    }
+
+    #servicios > div:nth-child(2) {
+        flex-basis: 40%;
+        
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #servicios .card {
+        border: 1px solid black;
+        width: 300px;
+    }
+
+    #servicios .card img {
+        width: 100%;
+    }
+
+    #servicios .card p {
+        text-align: center;
+    }
+
+/* Seccion: Equipo */
+
+    #equipo {
+        border-bottom: 1px solid black;
+        min-height: 100vh;
+        background-color: aquamarine;
+    }
+
+    #equipo img {
+        width: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    #equipo h2 {
+        margin: 0px;
+        padding-top: 1em;
+    }
+
+    #equipo h2, #equipo h3, #equipo p {
+        text-align: center;
+    }
+
+    .container-miembros {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+
+    .container-miembros > div {
+        flex-basis: 30%;
+        border: 1px solid black;
+        margin-bottom: 2em;
+        border-radius: 20px;
+
+        display: flex;
+        flex-flow: column nowrap;
     }
