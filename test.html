@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript</h1>
+
+    <!-- <script src="./js/condicional.js"></script> -->
+    <!-- <script src="./js/bucles.js"></script> -->
+
+    <script>
+        var examenNotas = [10, 9, 4, 7, 8, 6, 2, 3, 10, 8, 10];
+        var promedio = 0;
+        var contador = 0;
+        
+        for (var index = 0; index < examenNotas.length; index++) {
+            var nota = examenNotas[index];
+            promedio = promedio + nota;
+            contador++;
+        }
+
+        console.log("Promedio: ", promedio/contador);
+    </script>
+</body>
+</html>
