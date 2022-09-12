@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .card {
+            border: 1px solid black;
+            width: 200px;
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .rojo {
+            color: red;
+        }
+
+        .azul {
+            color: blue;
+        }
+
+        .fondo-rojo {
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="card rojo">
+            <img src="./img/img-place-holder.png" alt="Texto Alternativo">
+            <p>Hola Mundo!</p>
+        </div>
+    </div>
+
+    <button>A</button>
+    <button>B</button>
+    <button>C</button>
+
+    <script>
+        // Agregar TARJETA
+
+        // <p>Hola Mundo!</p>
+        var parrafo = document.createElement('p');
+        var texto = document.createTextNode('Hola Mundo!');
+        parrafo.appendChild(texto);
+
+        // <img src="./img/img-place-holder.png" alt="Texto Alternativo 2">
+        var imagen = document.createElement('img');
+        imagen.setAttribute('src', './img/img-place-holder.png');
+        imagen.setAttribute('alt', 'Texto Alternativo 2');
+
+        // <div class="card rojo"></div>
+        var card = document.createElement('div');
+        card.classList.add('card')
+        card.classList.add('azul')
+
+        card.appendChild(imagen);
+        card.appendChild(parrafo);
+        document.getElementById('container').appendChild(card);
+
+        /////////////////////////////////////////////////////////////////////////////////
+
+        function cambiarFondo(event) {
+            card.classList.add('fondo-rojo');
+        }
+
+        const cambiarFondo2 = (event) => {
+            card.classList.add('fondo-rojo');
+        }
+
+        var boton = document.querySelector('button')
+        boton.addEventListener('click', cambiarFondo2)
+
+
+        boton.addEventListener("click", function (event) {
+            console.log("Click sobre el botón");
+        });
+
+        boton.addEventListener("mouseup", function () {
+            console.log("MouseUp sobre el botón");
+        });
+
+        boton.addEventListener("mousedown", function () {
+            console.log("MouseDown sobre el botón");
+        });
+
+        document.addEventListener("click", function (event) {
+            if (event.target.nodeName == "BUTTON")
+                console.log("Aprete" + event.target.textContent);
+        });
+
+    </script>
+
+</body>
+
+</html>

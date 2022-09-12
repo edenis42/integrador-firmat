@@ -123,7 +123,7 @@ a {
 
     #servicios .card {
         border: 1px solid black;
-        width: 300px;
+        max-width: 300px;
     }
 
     #servicios .card img {

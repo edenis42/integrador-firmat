@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Javascript</h1>
 
@@ -13,17 +15,46 @@
     <!-- <script src="./js/bucles.js"></script> -->
 
     <script>
-        var examenNotas = [10, 9, 4, 7, 8, 6, 2, 3, 10, 8, 10];
-        var promedio = 0;
-        var contador = 0;
-        
-        for (var index = 0; index < examenNotas.length; index++) {
-            var nota = examenNotas[index];
-            promedio = promedio + nota;
-            contador++;
+
+        function suma(numero1, numero2, numero3) {
+            return numero1 + numero2 + numero3
         }
 
-        console.log("Promedio: ", promedio/contador);
+        function calcular_edad(persona) {
+            var anio_actual = 2022;
+            var mes_actual = 9;
+            var edad = anio_actual - persona.anio_nacimiento;
+
+            if (mes_actual < persona.mes_nacimiento) {
+                edad = edad - 1;
+            }
+            return edad;
+        }
+        
+
+        var pedro = {
+            nombre: 'Pedro',
+            apellido: "Gonzalez",
+            mes_nacimiento: 10,
+            anio_nacimiento: 1992
+        }
+
+        var edad_pedro = calcular_edad(pedro);
+        console.log("edad_pedro: ", edad_pedro);
+        console.log("suma de 3 numeros: ", suma(10, 20, 30));
+
+        var mensaje = "Hola - Mundo!"
+        console.log("mensaje.length: ", mensaje.length)
+        console.log("mensaje.indexOf: ", mensaje.indexOf("Mu"))
+
+        var dias = ["Lunes", "Martes"]
+        console.log("Primer elemento: ", dias[0])
+        console.log("dias: ", dias)
+
+        console.log("Primer elemento: ", dias.shift())
+        console.log("dias: ", dias)
+
     </script>
 </body>
+
 </html>

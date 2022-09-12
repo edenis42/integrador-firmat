@@ -1,0 +1,29 @@
+@media screen and (max-width: 650px) {
+
+    h1 {
+        font-size: 1.5em !important;
+    }
+
+    #subtitle {
+        font-size: 1em;
+        padding-left: 1em;
+        width: 50%;
+    }
+
+    .span-logo {
+        display: none;
+    }
+
+    .container-miembros > div p {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+
+    h1 {
+        font-size: 1em !important;
+    }
+    
+}
